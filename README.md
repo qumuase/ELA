@@ -1,5 +1,6 @@
 ### ELA
 ELA 全称：Error Level Analysis ，汉译为“错误级别分析”或者叫“误差分析”。通过检测特定压缩比率重新绘制图片后造成的误差分布，可用于识别JPEG图片的压缩。
+
 [维基百科](https://en.wikipedia.org/wiki/Error_level_analysis)：ELA是对JPEG有损压缩的数字数据中的压缩影片进行分析。
 ELA技术可参考 [Neal Krawetz先生](http://www.hackerfactor.com/) 在其 [07年论文](https://www.wired.com/images_blogs/threatlevel/files/bh-usa-07-krawetz.pdf) 中的详细介绍。
 
@@ -22,27 +23,36 @@ ELA技术可参考 [Neal Krawetz先生](http://www.hackerfactor.com/) 在其 [07
 ![](https://29a.ch/sandbox/2012/imageerrorlevelanalysis/fake_screenshot.jpg)
 ![](https://29a.ch/sandbox/2012/imageerrorlevelanalysis/original_screenshot.jpg)
 3. 原始照片在重新保存期间具有高度的变化（高ELA值）。后续的任何操作都将降低ELA值，产生较暗的ELA结果：
-
+```
 原图
+```
 ![](http://fotoforensic.com/img/books-orig.jpg)
 
+```
 原ELA
+```
 ![](http://fotoforensic.com/img/books-orig-ela.png)
 
 重新保存一次：
-
+```
 二次保存图
+```
 ![](http://fotoforensic.com/img/books-resave.jpg)
 
+```
 二次保存后ELA
+```
 ![](http://fotoforensic.com/img/books-resave-ela.png)
 
 修改图片内容(复制了绿皮书及放置了恐龙玩具)：
-
+```
 修改后图片
+```
 ![](http://fotoforensic.com/img/books-edited.jpg)
 
+```
 修改后ELA
+```
 ![](http://fotoforensic.com/img/books-edited-ela.png)
 
 ### 局限性
